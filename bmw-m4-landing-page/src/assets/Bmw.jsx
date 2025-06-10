@@ -6,7 +6,7 @@ export function Bmw(props) {
   const { nodes, materials, animations } = useGLTF('/2021_bmw_m4_competition.glb')
   const { actions } = useAnimations(animations, group)
   return (
-    <group scale={[1.5,1.5,1.5]} position={[0,0,0]} ref={group} {...props} dispose={null}>
+    <group scale={[1,1,1]} position={[0,0,0]} ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group

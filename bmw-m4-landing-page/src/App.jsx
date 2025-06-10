@@ -30,33 +30,33 @@ const App = () => {
     }).to(sceneRef.current,{
       ease:'none',
       opacity:0,
-      x:'-25vw',
-      y:'140vh',
+      x:'25vw',
+      y:'120vh',
     }).to(sceneRef.current,{
       ease:'none',
       opacity:0,
-      x:'-30vw',
+      x:'25',
       y:'380vh',
     }).to(sceneRef.current,{
       ease:'none',
       opacity:1,
-      x:'-25vw',
-      y:'435vh',
+      x:'-30vw',
+      y:'420vh',
     }).to(sceneRef.current,{
       ease:'none',
       x:'30vw',
       y:'520vh',
     }).to(sceneRef.current,{
       ease:'none',
-      x:'-25vw',
-      y:'630vh',
+      x:'-30vw',
+      y:'610vh',
     }).to(sceneRef.current,{
       ease:'none',
       x:'25vw',
-      y:'730vh',
+      y:'720vh',
     }).to(sceneRef.current,{
       ease:'none',
-      x:'-25vw',
+      x:'-20vw',
       y:'830vh',
     })
     
