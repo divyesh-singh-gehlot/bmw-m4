@@ -51,8 +51,8 @@ const App = () => {
       .to(sceneRef.current, { x: '-35vw', y: '690vh', ease: 'none' }, "turn+=0.3")
 
       .addLabel("finalZigZag")
-      .to(sceneRef.current, { x: '80vw', y: '810vh', ease: 'none' }, "finalZigZag")
-      .to(sceneRef.current, { x: '-10vw', y: '880vh', ease: 'none' }, "finalZigZag+=0.3");
+      .to(sceneRef.current, { x: '60vw', y: '830vh', ease: 'none' }, "finalZigZag")
+      .to(sceneRef.current, { x: '-10vw', y: '900vh', ease: 'none' }, "finalZigZag+=0.3");
 
     // Optional cleanup
     return () => {
@@ -89,7 +89,7 @@ const App = () => {
         <HeroScrollSection />
       </section>
       <section className='h-[100vh] w-full bg-black'>
-        <div className='flex gap-5 py-36 '>
+        <div className='flex gap-5 pt-36 '>
         <div className='w-[40%] flex flex-col gap-5'>
           <h1 className='text-white font-extrabold text-3xl font-antonio'>MOTOR RACING TECHNOLOGY.</h1>
           <p className='text-white text-lg font-sans'>The straight six-cylinder engine featuring M TwinPower Turbo Technology, available in three performance levels, features superior power delivery and the striking characteristic M engine sound. Two mono-scroll turbochargers, direct High-Precision Injection, fully variable valve control and variable camshaft control ensure outstanding performance at any time. The BMW M4 Competition Coupé with M xDrive accelerates from 0 to 100 km/h in just 3.5 seconds and from 0 to 200 km/h in just 11.8 seconds – a new benchmark.</p>
@@ -99,7 +99,48 @@ const App = () => {
         </div>
         </div>
       </section>
-      <section className='h-[100vh] w-full bg-black'>Technical Details</section>
+      <section className='h-[120vh] w-full bg-black'>
+        <div className="w-[60%] mx-auto text-white font-sans mb-20">
+  <h2 className="text-xl font-bold mb-8">TECHNICAL DETAILS:</h2>
+
+  <div className="mb-10">
+    <h3 className="text-lg font-semibold mb-2">Adaptive M suspension.</h3>
+    <p className="text-sm text-gray-300">
+      Excellent dynamics, exceptional roadholding and improved comfort on long journeys:
+      The Adaptive M suspension makes it possible to adjust the damper characteristics to suit any given driving situation, increasing driving dynamics and comfort. In addition to the standard COMFORT setting for increased driving comfort, the SPORT programme offers firmer damper settings, and with SPORT+, the vehicle can be used on the race track.
+    </p>
+  </div>
+
+  <div className="mb-10">
+    <h3 className="text-lg font-semibold mb-2">M Carbon ceramic brake.</h3>
+    <p className="text-sm text-gray-300">
+      Direct application of force, reduced wear, and corrosion-free: The optional M Carbon ceramic brake delivers braking power more directly. In addition, it contributes to a lower vehicle weight, which has a positive impact on agility, dynamics and acceleration. The technical equipment is visible through carbon-ceramic brake discs and calipers in the colour Gold matt with M lettering on the front and rear axle on the outside.
+    </p>
+  </div>
+
+  <div className="mb-10">
+    <h3 className="text-lg font-semibold mb-2">BMW M xDrive.</h3>
+    <p className="text-sm text-gray-300">
+      BMW M xDrive with Active M Differential of the BMW M4 Competition with M xDrive, guarantees maximum traction and driving dynamics for everyday driving, as well as at the racetrack. The M specific technology combines the typical agility of a rear-wheel drive with the control of an all-wheel drive. You can choose between the drive variants 4WD, 4WD Sport and – in DSC-off mode – 2WD.
+    </p>
+  </div>
+
+  <div className="mb-10">
+    <h3 className="text-lg font-semibold mb-2">8-speed M Steptronic sport transmission.</h3>
+    <p className="text-sm text-gray-300">
+      The 8-speed M Steptronic sport transmission with Drivelogic of the BMW M4 Competition model variants offers numerous shifting options: extremely dynamic, particularly comfortable and smooth as well as fuel-saving. You can shift manually using the gear lever or the gearshift paddles on the steering wheel, or select one of three automatic programmes using Drivelogic.
+    </p>
+  </div>
+
+  <div className="mb-10">
+    <h3 className="text-lg font-semibold mb-2">M specific braking system.</h3>
+    <p className="text-sm text-gray-300">
+      In addition to saving approximately two kilograms in weight, the integrated M specific braking system provides very high braking dynamics. For a maximum level of individualisation, the driver can choose between "Comfort" and "Sport" brake pedal settings according to the situation. Depending on the parameters, the response behavior is designed differently. In "Sport" mode, deceleration is higher with the same distance of pedal travel particularly at low speeds while the response of the two parameter settings is similar at high speeds.
+    </p>
+  </div>
+</div>
+
+      </section>
       <section className='h-[100vh] w-full bg-[url("./assets/images/about-bg.jpg")] bg-cover'>More Details 1</section>
       <section className='h-[100vh] w-full bg-[url("./assets/images/about-bg.jpg")] bg-cover'>More Details 2</section>
       <section className='h-[100vh] w-full bg-[url("./assets/images/about-bg.jpg")] bg-cover'>
