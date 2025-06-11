@@ -23,10 +23,11 @@ const Scene = ({ progress }) => {
       [0.3, 9.53, 0.10],
       [-4.54, 4.66, 5.56],
       [3.07, 2.76, 8.20],
-      [-3.04, 2.06, -5.15],
+      [-3.04, 2.06, -6.15],
       ]
 
-      const fovValues = [80, 40, 70, 70, 95, 80, 70, 80, 50];
+      const fovValues = [90, 40, 90, 50, 120, 80, 70, 80, 80];
+      // const fovValues = [90, 40, 90, 90, 80, 60, 60, 90, 80];
 
       if (progress >= 1) {
         gsap.to(cameraRef.current.position, {

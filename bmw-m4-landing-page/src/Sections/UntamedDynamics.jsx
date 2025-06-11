@@ -23,21 +23,22 @@ const UntamedDynamics = () => {
         <div className="grid grid-cols-6 gap-4 auto-rows-[200px] md:auto-rows-[250px] lg:auto-rows-[300px]">
           {/* Layout based on visual pattern */}
           <div className="col-span-2 row-span-2">
-            <img src={img1} className="w-full h-full object-cover rounded-md" alt="BMW Interior" />
+            <img src={img1} className="w-full h-full object-cover rounded-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" alt="BMW Interior" />
           </div>
           <div className="col-span-2">
-            <img src={img2} className="w-full h-full object-cover rounded-md" alt="BMW Front" />
+            <img src={img2} className="w-full h-full object-cover rounded-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" alt="BMW Front" />
           </div>
           <div className="col-span-2 row-span-2">
-            <img src={img3} className="w-full h-full object-cover rounded-md" alt="BMW Taillight" />
+            <img src={img3} className="w-full h-full object-cover rounded-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" alt="BMW Taillight" />
           </div>
           <div className="col-span-3">
-            <img src={img4} className="w-full h-full object-cover rounded-md" alt="BMW Seats" />
+            <img src={img4} className="w-full h-full object-cover rounded-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" alt="BMW Seats" />
           </div>
           <div className="col-span-3">
-            <img src={img5} className="w-full h-full object-cover rounded-md" alt="BMW Top View" />
+            <img src={img5} className="w-full h-full object-cover rounded-md transform transition duration-300 hover:-translate-y-2 hover:shadow-xl" alt="BMW Top View" />
           </div>
         </div>
+
       </div>
     </section>
   );

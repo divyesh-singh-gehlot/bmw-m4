@@ -10,7 +10,12 @@ module.exports = {
                 antonio: ['Antonio', 'sans-serif'],
                 sans: ['DM Sans', 'sans-serif'], // default font
             },
+            backgroundImage: {
+                'power-image': "url('/src/assets/Images/Text-Scroll/img.avif')",
+            }
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/typography'),
+    ],
 }
