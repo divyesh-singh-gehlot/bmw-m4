@@ -15,18 +15,18 @@ const Scene = ({ progress }) => {
 
   useEffect(() => {
     const updateCamPos = () => {
-      const positions = [[8.93, 1.27, 0.22],
+      const positions = [[-0.05, 2.33,8.00],
       [4.96, 2.14, 9.80],
       [-0.09, 1.83, 11.30],
       [-0.09, 1.83, 14.30],
-      [-4.80, 3.32 ,5.09],
-      [1.58, 9.48, -0.00],
+      [-4.80, 3.32, 5.09],
+      [0.3, 9.53, 0.10],
       [-4.54, 4.66, 5.56],
       [3.07, 2.76, 8.20],
       [-3.04, 2.06, -5.15],
       ]
 
-      const fovValues = [40, 30, 70, 70, 60, 70, 70, 80, 50];
+      const fovValues = [80, 40, 70, 70, 95, 80, 70, 80, 50];
 
       if (progress >= 1) {
         gsap.to(cameraRef.current.position, {
@@ -54,19 +54,19 @@ const Scene = ({ progress }) => {
           duration: .5,
           ease: 'power1.out',
         }
-        
+
         )
         // fov animation
-  const startFov = fovValues[segmentIndex];
-  const endFov = fovValues[segmentIndex + 1];
-  const fov = startFov + (endFov - startFov) * percentage;
+        const startFov = fovValues[segmentIndex];
+        const endFov = fovValues[segmentIndex + 1];
+        const fov = startFov + (endFov - startFov) * percentage;
 
-  gsap.to(cameraRef.current, {
-    fov,
-    duration: 0.5,
-    ease: 'power1.out',
-    onUpdate: () => cameraRef.current.updateProjectionMatrix(),
-  });
+        gsap.to(cameraRef.current, {
+          fov,
+          duration: 0.5,
+          ease: 'power1.out',
+          onUpdate: () => cameraRef.current.updateProjectionMatrix(),
+        });
       }
     }
 
@@ -79,12 +79,24 @@ const Scene = ({ progress }) => {
     <>
       {/* <OrbitControls /> */}
       <PerspectiveCamera ref={cameraRef}
-        fov={45} near={0.1}
+        fov={60} near={0.01}
         far={10000} makeDefault
         position={[8.93, 2.27, 0.22]}
       />
-      <Environment preset="city" />
-      <Bmw />
+      <Environment
+        background={false} // can be true, false or "only" (which only sets the background) (default: false)
+        backgroundBlurriness={0} // optional blur factor between 0 and 1 (default: 0, only works with three 0.146 and up)
+        backgroundIntensity={1} // optional intensity factor (default: 1, only works with three 0.163 and up)
+        backgroundRotation={[0, Math.PI / 2, 0]} // optional rotation (default: 0, only works with three 0.163 and up)
+        environmentIntensity={1} // optional intensity factor (default: 1, only works with three 0.163 and up)
+        environmentRotation={[0, Math.PI / 2, 0]} // optional rotation (default: 0, only works with three 0.163 and up)
+        path="/"
+        preset='forest'
+        scene={undefined} // adds the ability to pass a custom THREE.Scene, can also be a ref
+        encoding={undefined} // adds the ability to pass a custom THREE.TextureEncoding (default: THREE.sRGBEncoding for an array of files and THREE.LinearEncoding for a single texture)
+      />
+
+      <Bmw/>
     </>
   )
 }
