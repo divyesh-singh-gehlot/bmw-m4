@@ -26,7 +26,7 @@ const Scene = ({ progress }) => {
       [-3.04, 2.06, -6.15],
       ]
 
-      const fovValues = [90, 40, 90, 50, 120, 80, 70, 80, 80];
+      const fovValues = [90, 40, 90, 50, 120, 80, 70, 70, 80];
       // const fovValues = [90, 40, 90, 90, 80, 60, 60, 90, 80];
 
       if (progress >= 1) {
